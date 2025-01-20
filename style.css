@@ -1,0 +1,124 @@
+:root {
+    --regular-font: 'Roboto-regular', sans-serif;
+    --bold-font: 'Roboto-bold', sans-serif;
+    --dark-grey: hsl(234, 29%, 20%);
+    --charcoal-grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+    --tomato: hsl(4, 100%, 67%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark-grey);
+    max-height: 100vh;
+    display: grid;
+    place-items: center;
+    margin-top: 5%;
+}
+
+.container {
+    background-color: var(--white);
+    border-radius: 30px;
+    width: 65%;
+    display: grid;
+    place-content: center;
+    height: max-content;
+    margin: 0;
+    padding: 30px;
+    border: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: max-content;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 90%;
+    justify-content: center;
+    align-content: center;
+}
+
+h1 {
+    font-family: var(--bold-font);
+    font-size: 38px;
+    color: var(--dark-grey);
+    text-align: center;
+    padding: 30px;
+}
+
+p {
+    font-family: var(--bold-font);
+    font-size: 16px;
+    color: var(--dark-grey);
+    padding: 0;
+    line-height: 23px;
+    text-align: left;
+}
+
+.advantages {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+}
+
+.check-img {
+    width: 20px;
+    margin-right: 10px;
+
+}
+
+.main-img {
+    width: 95%;
+}
+
+img {
+    width: 100%;
+}
+
+label {
+    font-family: var(--bold-font);
+    font-size: 12px;
+    width: 50%;
+    margin-top: 30px;
+    color: var(--dark-grey);
+}
+
+#email {
+    width: 100%;
+    margin:  0 0 20px 0;
+    height: 50px;
+}
+
+#submit {
+    width: 100%;
+    padding:  30px 20px;
+}
+
+
+@font-face {
+    font-family: 'Roboto-regular';
+    src: url('./Roboto-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Roboto-bold';
+    src: url('./Roboto-Bold.ttf') format('ttf');
+    font-weight: 700;
+    font-style: normal;
+  }

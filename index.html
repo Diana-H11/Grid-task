@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Task</title>
+    <link rel="icon" href="./favicon-32x32.png" type="png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="grid">
+            <div class="text-content">
+                <h1>Stay updated!</h1>
+                <p>Join 60,000+ product managers receiving monthly updates on:</p><br>
+                <div class="advantages">
+                    <div class="check-img"><img src="./icon-list.svg" alt="List image"></div>
+                    <p>Product discovery and building what matters</p>
+                </div>
+                <div class="advantages">
+                    <div class="check-img"><img src="./icon-list.svg" alt="List image"></div>
+                    <p>Measuring to ensure updates are a success</p>
+                </div>
+                <div class="advantages">
+                    <div class="check-img"><img src="./icon-list.svg" alt="List image"></div>
+                    <p>And much more!</p>
+                </div>
+                <form action="./send.html" method="get" onsubmit="return handleFormSubmit(event)">
+                    <label for="email" id="email-text">Email address</label>
+                    <label for="email" id="error-text" hidden>Valid email required</label>
+                    <input type="email" id="email-input" value="" placeholder="email@company.com" required><br>
+                    <input type="submit" id="submit" value="Subscribe to monthly newsletter">
+                </form>
+            </div>
+            <div class="main-img">
+                <img src="./illustration-sign-up-desktop.svg" alt="Sign up illustration">
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

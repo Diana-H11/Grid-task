@@ -7,7 +7,7 @@ if (window.location.pathname.includes("send.html")) {
     }
 
     function dismissMessage() {
-        window.location.href = 'index.html';
+        window.location.href = './index.html';
     }
 } else {
     const input = document.getElementById('email-input');
@@ -44,6 +44,6 @@ if (window.location.pathname.includes("send.html")) {
         }
 
         localStorage.setItem('email', emailInput);
-        window.location.href = 'send.html';
+        window.location.href = './send.html';
     }
 }

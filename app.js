@@ -1,4 +1,4 @@
-if (window.location.pathname.includes("./send.html")) {
+if (window.location.pathname.includes("send.html")) {
     const email = localStorage.getItem('email');
     if (email) {
         document.getElementById('email-display').textContent = email;
